@@ -10,11 +10,13 @@ module.exports = function init() {
     .append('<h1>Hello, World!</h1>')
     .effect('slide', 250)
 }
+```
 
+```javascript
 // ./main.js
 const $ = require('jquery')
 const init = require('./init')
 
 $(init)
 ```
-
+<!-- .element: class="fragment" -->

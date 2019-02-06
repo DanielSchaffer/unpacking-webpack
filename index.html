@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,18 +24,19 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="slides/0-1-title.md"></section>
-				<section data-markdown="slides/0-2-overview.md"></section>
-				<section data-markdown="slides/1-0-title.md"></section>
-				<section data-markdown="slides/1-1-what-is-this.md"></section>
-				<section data-markdown="slides/1-2-what-task-runners.md"></section>
-				<section data-markdown="slides/1-3-what-package-managers.md"></section>
-				<section data-markdown="slides/1-4-what-bundlers.md"></section>
-				<section data-markdown="slides/1-5-webpack-bundler.md"></section>
-				<section data-markdown="slides/2-0-title.md"></section>
-				<section data-markdown="slides/2-1-bad-old-days.md"></section>
-				<section data-markdown="slides/2-2-better-days.md"></section>
-				<section data-markdown="slides/2-3-even-better.md"></section>
+				<section id="0-1" data-markdown="slides/0-1-title.md"></section>
+				<section id="0-2" data-markdown="slides/0-2-overview.md"></section>
+				<section id="0-3" data-markdown="slides/1-0-title.md"></section>
+				<section id="1-1" data-markdown="slides/1-1-what-is-this.md" data-background="slides/assets/out-there.jpg"></section>
+				<section id="1-2" data-markdown="slides/1-2-what-task-runners.md"></section>
+				<section id="1-3" data-markdown="slides/1-3-what-package-managers.md"></section>
+				<section id="1-4" data-markdown="slides/1-4-what-bundlers.md"></section>
+				<section id="1-5" data-markdown="slides/1-5-webpack-bundler.md"></section>
+				<section id="2-0" data-markdown="slides/2-0-title.md"></section>
+				<section id="2-1" data-markdown="slides/2-1-bad-old-days.md"></section>
+				<section id="2-2" data-markdown="slides/2-2-better-days.md"></section>
+                <section id="2-3" data-markdown="slides/2-3-even-better.md"></section>
+                <section id="3-0" data-markdown="slides/3-0-title.md"></section>
 			</div>
 		</div>
 
@@ -52,7 +53,10 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+                history: true,
+				transition: 'convex',
+
 			});
 		</script>
 	</body>
